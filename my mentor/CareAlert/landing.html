@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareAlert — Hackathon Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; background-color: #f8fafc; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <div class="flex-grow flex items-center justify-center p-4">
+        <div class="max-w-3xl w-full">
+            <!-- Hero -->
+            <div class="text-center mb-12">
+                <h1 class="text-5xl sm:text-6xl font-black text-indigo-700 tracking-tight mb-4">CareAlert <span class="text-4xl sm:text-5xl">🏥</span></h1>
+                <p class="text-lg sm:text-xl text-gray-500 font-medium max-w-xl mx-auto">
+                    AI-powered rural healthcare triage. Zero-backend infrastructure designed for hackathons.
+                </p>
+            </div>
+
+            <!-- Portal Cards -->
+            <div class="grid sm:grid-cols-2 gap-6">
+                <!-- Nurse Portal -->
+                <a href="index.html" class="group relative bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 block">
+                    <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-t-3xl"></div>
+                    <div class="bg-blue-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        👩🏽‍⚕️
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-gray-900 mb-2">Field Nurse Portal</h2>
+                    <p class="text-sm font-medium text-gray-500 mb-6">
+                        Record patient symptoms in regional languages, allocate nearby hospitals via GPS, and get instant AI triage reports.
+                    </p>
+                    <div class="flex items-center text-indigo-600 font-bold text-sm">
+                        Launch Nurse App 
+                        <svg class="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                </a>
+
+                <!-- Doctor Portal -->
+                <a href="doctor.html" class="group relative bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 block">
+                    <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-teal-400 to-emerald-500 rounded-t-3xl"></div>
+                    <div class="bg-emerald-50 w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">
+                        👨🏽‍⚕️
+                    </div>
+                    <h2 class="text-2xl font-extrabold text-gray-900 mb-2">Doctor Dashboard</h2>
+                    <p class="text-sm font-medium text-gray-500 mb-6">
+                        Real-time monitoring of high-risk patients. Write reviews, schedule visits, and send feedback instantly to the field.
+                    </p>
+                    <div class="flex items-center text-emerald-600 font-bold text-sm">
+                        Launch Dashboard
+                        <svg class="w-4 h-4 ml-1 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </div>
+                </a>
+            </div>
+            
+            <p class="text-center text-xs font-bold text-gray-400 mt-12 uppercase tracking-widest">Running locally via localStorage</p>
+        </div>
+    </div>
+
+</body>
+</html>
